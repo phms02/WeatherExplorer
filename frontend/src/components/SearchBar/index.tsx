@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 
-//* Interfaces imports...
-import { Country } from "../../utils/Interfaces";
-
 //* Api method to search countries import...
 import { searchCountries } from "../../utils/api";
 
-//* styled-compoents components imports...
+//* Importing components created with styled-components...
 import { InputStyled } from "./styles";
 
 interface SearchBarProps {
-  onSearch: (countries: Country[]) => void;
+  onSearch: (query: string) => void; // Corrigido para receber query como string
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
@@ -18,11 +15,11 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
   const handleSearch = async () => {
     try {
-      const countries = await searchCountries(searchQuery); // Use a função de busca de países
-      onSearch(countries);
+      await searchCountries(searchQuery); // Use a função de busca de países
+      onSearch(searchQuery); // Corrigido para passar a string de pesquisa
     } catch (error) {
       console.error('Error searching countries:', error);
-      onSearch([]); // Limpa a lista de países em caso de erro
+      onSearch(''); // Limpa a pesquisa em caso de erro
     }
   };
 

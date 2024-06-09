@@ -64,7 +64,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
     │    │   │   ├── manifest.json
     │    │   │   └── robots.txt
     │    │   ├── components/
-    │    │   │   ├── Modal/
+    │    │   │   ├── CountryModal/
     │    │   │   │   ├── index.tsx
     │    │   │   │   └── styles.ts
     │    │   │   ├── ResultList/

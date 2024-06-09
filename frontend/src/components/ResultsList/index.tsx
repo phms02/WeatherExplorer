@@ -1,16 +1,18 @@
 import React from "react";
 
-//* styled-compoents components imports...
+//* Importing components created with styled-components...
 import { ListItem, ListStyled } from "./styles";
 
 interface Country {
   id: number;
   name: string;
   capital: string;
+  population: number;
+  area: number;
 }
 
 interface ResultsListProps {
-  countries: Country[];
+  countries: Country[]; // Certifique-se de que Country esteja importado corretamente e tenha o campo id
   onItemClick: (country: Country) => void;
 }
 

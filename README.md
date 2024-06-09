@@ -51,7 +51,7 @@ WeatherExplorer/
 │    │   │   ├── manifest.json
 │    │   │   └── robots.txt
 │    │   ├── components/
-│    │   │   ├── Modal/
+│    │   │   ├── CountryModal/
 │    │   │   │   ├── index.tsx
 │    │   │   │   └── styles.ts
 │    │   │   ├── ResultList/
