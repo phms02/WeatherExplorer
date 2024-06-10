@@ -1,13 +1,14 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "author": "Pedro Henrique Mequelim da Silva",
   "description": "Backend of the WeatherExplorer application, developed during the test project for the Worktables vacancy.",
+  "license": "ISC",
   "main": "index.ts",
   "scripts": {
+    "start": "nodemon ./src/server.ts",
     "test": "npm run test"
   },
-  "author": "Pedro Henrique Mequelim da Silva",
-  "license": "ISC",
   "dependencies": {
     "@prisma/client": "^5.15.0",
     "@types/body-parser": "^1.19.5",
