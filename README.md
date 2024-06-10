@@ -111,7 +111,7 @@ WeatherExplorer/
 4. Start the development server:
 
     ```shell
-    npm run dev
+    npm run start
     ```
 
 ## Backend Setup
